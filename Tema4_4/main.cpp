@@ -14,9 +14,9 @@ int main()
     *pntMedie = (*pnt + *pnt1 + *pnt2)/3;
     cout << "Media aritmetica este " << *pntMedie << endl;
 
-    delete pnt; pnt = nullptr;
     delete pnt1; pnt1 = nullptr;
     delete pnt2; pnt2 = nullptr;
+    delete pntMedie; pntMedie = nullptr;
 
 
     return 0;
