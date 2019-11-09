@@ -27,7 +27,6 @@ int main()
     }
 
     delete arrayHeap; arrayHeap = nullptr;
-    delete arraySuma; arraySuma = nullptr;
 
     return 0;
 }
