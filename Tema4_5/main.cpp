@@ -11,22 +11,12 @@ int main()
 
     for(int i = 0; i < 41; ++i){
         arrayStack[i] = 0 + i*7;
-    }
-
-    for(int i = 0; i < 41; ++i){
         arrayHeap[i] = 0 + i*8;
-    }
-
-    for(int i = 0; i < 41; ++i){
         arraySuma[i] = arrayStack[i] + arrayHeap[i];
-    }
-
-    for(int i = 0; i < 41; ++i){
         cout << "Stack " << arrayStack[i] << "\tHeap " << arrayHeap[i] << "\tStack + Heap = " << arraySuma[i]<< endl;
-
     }
 
-    delete arrayHeap; arrayHeap = nullptr;
+    delete[] arrayHeap; arrayHeap = nullptr;
 
     return 0;
 }
